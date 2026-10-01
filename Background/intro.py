@@ -4,8 +4,12 @@ from PIL import Image
 # Load an image from local file
 image = Image.open("images/votaciones2021.jpg")
 
-# Display image with a caption
-st.image(image, caption="Elections", use_column_width=True)
+st.image(image, caption="Elections", use_container_width=True)
+
+st.caption(
+    "Aplicación recuperada y corregida | "
+    "Nombre: Yexalen Quetzalli Lozano Gaytan | Matrícula: A01664722"
+)
 
 # Display formatted text below the image
 st.markdown(
